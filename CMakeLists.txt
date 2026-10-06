@@ -5,6 +5,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+include(CTest)
+option(VULCAO_SAMPLES_WINDOW_TESTS "Register windowed smoke tests (requires a display)" OFF)
+
 find_package(Vulkan REQUIRED)
 
 # --- vulcao (git submodule, built from source as a subproject) ---------------

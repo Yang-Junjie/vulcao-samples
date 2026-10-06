@@ -1,0 +1,2 @@
+add_executable(transfer_regions main.cpp)
+target_link_libraries(transfer_regions PRIVATE samples_support)
